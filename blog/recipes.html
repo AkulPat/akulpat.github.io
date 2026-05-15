@@ -1,0 +1,22 @@
+---
+layout: default
+title: Recipes
+---
+
+<h1>Cookbook Recipes</h1>
+<div id="recipes-container">
+    <!-- Recipes will be displayed here -->
+</div>
+
+<h2>Add New Recipe</h2>
+<form id="recipe-form">
+    <label for="recipe-name">Name:</label>
+    <input type="text" id="recipe-name" required>
+    <label for="ingredients">Ingredients:</label>
+    <textarea id="ingredients" required></textarea>
+    <label for="instructions">Instructions:</label>
+    <textarea id="instructions" required></textarea>
+    <button type="submit">Add Recipe</button>
+</form>
+
+<script src="{{ '/assets/js/recipes.js' | relative_url }}"></script>

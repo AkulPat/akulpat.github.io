@@ -1,0 +1,9 @@
+title: Akul Patel
+description: Personal site with projects and blog
+url: "https://akulpat.github.io"
+baseurl: ""
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

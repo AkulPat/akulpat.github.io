@@ -1,0 +1,69 @@
+/* Minimalistic earthy tones */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Beige */
+    color: #4a4a4a; /* Dark gray */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8fbc8f; /* Green */
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #f5f5dc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #d2b48c; /* Tan */
+}
+
+h1, h2, h3 {
+    color: #8fbc8f;
+}
+
+a {
+    color: #8fbc8f;
+}
+
+a:hover {
+    color: #4a4a4a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 0.5rem 0;
+    }
+}

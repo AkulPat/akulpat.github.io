@@ -1,0 +1,12 @@
+[
+    {
+        "name": "example-repo-1",
+        "description": "An example project description",
+        "url": "https://github.com/AkulPat/example-repo-1"
+    },
+    {
+        "name": "example-repo-2",
+        "description": "Another example project",
+        "url": "https://github.com/AkulPat/example-repo-2"
+    }
+]
