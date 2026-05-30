@@ -3,6 +3,59 @@ layout: default
 title: Home
 ---
 
-<h1>Welcome to My Personal Site</h1>
-<p>This is my personal website where I showcase my projects and share my blog.</p>
-<p>Explore my <a href="/projects.html">projects</a> or check out my <a href="/blog/">blog</a>.</p>"
+<div class="hero-section">
+    <h1>Akul Patel</h1>
+    <p class="tagline">Developer & Creator</p>
+    <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+    </div>
+    <p class="bio">Welcome to my personal site. I share my projects and blog entries exploring various interests in development and creativity.</p>
+</div>
+
+<div class="tab-navigation">
+    <button class="tab-btn active" data-tab="home">Home</button>
+    <button class="tab-btn" data-tab="projects">Projects</button>
+    <button class="tab-btn" data-tab="blog">Blog</button>
+</div>
+
+<div class="tab-content">
+    <div id="home" class="tab-pane active">
+        <h2>Welcome</h2>
+        <p>This is my central hub for showcasing my work and sharing my thoughts. Use the tabs above to explore my projects and blog entries.</p>
+    </div>
+
+    <div id="projects" class="tab-pane">
+        <h2>My Projects</h2>
+        <div id="projects-container">
+            <!-- Projects will be loaded here -->
+        </div>
+    </div>
+
+    <div id="blog" class="tab-pane">
+        <h2>Blog</h2>
+        <div id="blog-container">
+            <!-- Blog entries will be loaded here -->
+        </div>
+
+        <h3>Add Blog Entry</h3>
+        <form id="blog-form">
+            <label for="entry-title">Title:</label>
+            <input type="text" id="entry-title" required>
+            <label for="entry-category">Category:</label>
+            <select id="entry-category" required>
+                <option value="Recipe">Recipe</option>
+                <option value="Garden">Garden</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="entry-content">Content:</label>
+            <textarea id="entry-content" required></textarea>
+            <button type="submit">Add Entry</button>
+        </form>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/projects.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/blog.js' | relative_url }}"></script>"

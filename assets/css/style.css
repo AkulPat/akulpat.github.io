@@ -36,7 +36,7 @@ nav a:hover {
 
 main {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 1rem;
 }
 
@@ -44,6 +44,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #d2b48c; /* Tan */
+    margin-top: 2rem;
 }
 
 h1, h2, h3 {
@@ -52,10 +53,210 @@ h1, h2, h3 {
 
 a {
     color: #8fbc8f;
+    text-decoration: none;
 }
 
 a:hover {
     color: #4a4a4a;
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero-section {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 2px solid #8fbc8f;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    margin: 0.5rem 0;
+    font-size: 2.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #8fbc8f;
+    margin: 0.5rem 0;
+}
+
+.social-links {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #8fbc8f;
+    color: #f5f5dc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #7aaa7a;
+    color: #f5f5dc;
+    text-decoration: none;
+}
+
+.bio {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+/* Tab navigation */
+.tab-navigation {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 2px solid #d2b48c;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #f5f5dc;
+    color: #4a4a4a;
+    border: 2px solid #d2b48c;
+    border-bottom: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-btn:hover {
+    background-color: #e8e8d0;
+}
+
+.tab-btn.active {
+    background-color: #8fbc8f;
+    color: #f5f5dc;
+    border-color: #8fbc8f;
+}
+
+/* Tab content */
+.tab-content {
+    min-height: 400px;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.3s;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Blog entries */
+.blog-entry {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border-left: 4px solid #8fbc8f;
+    border-radius: 2px;
+}
+
+.blog-entry h3 {
+    margin-top: 0;
+}
+
+.entry-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #8a8a8a;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: #8fbc8f;
+    color: #f5f5dc;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.date {
+    align-self: center;
+}
+
+#projects-container > div,
+#blog-container > div {
+    padding: 1rem 0;
+}
+
+/* Forms */
+form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #d2b48c;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"],
+.delete-btn {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #8fbc8f;
+    color: #f5f5dc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+.delete-btn:hover {
+    background-color: #7aaa7a;
+}
+
+.delete-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
 }
 
 /* Responsive */
@@ -65,5 +266,29 @@ a:hover {
     }
     nav li {
         margin: 0.5rem 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tab-navigation {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        width: 100%;
+        border-radius: 4px;
+        border-bottom: 2px solid #d2b48c;
+    }
+
+    .entry-meta {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
