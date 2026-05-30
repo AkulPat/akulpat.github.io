@@ -1,3 +1,3 @@
-## [<Acess my site>] (<akulpat.github.io>)
+## [Site](akulpat.github.io)
 
 
